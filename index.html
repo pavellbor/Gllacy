@@ -3,52 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header central">
 		<nav class="main-navigation">
-			<a href="#"><img class="logo-image" src="img/logo.svg" alt="Логотип Gllacy"></a>
-			<ul class="site-navigation-list">
-				<li class="site-navigation-item"><a href="#">Каталог</a>
-					<ul class="site-dropdown-list">
-						<li class="site-dropdown-item"><a>Новинки</a></li>
-						<li class="site-dropdown-item"><a href="#">Сливочное</a></li>
-						<li class="site-dropdown-item"><a href="#">Щербет</a></li>
-						<li class="site-dropdown-item"><a href="#">Фруктовый лед</a></li>
-						<li class="site-dropdown-item"><a href="#">Мелорин</a></li>
-					</ul>
-				</li>
-				<li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-				<li class="site-navigation-item"><a href="#">О Компании</a></li>
-			</ul>
-			<ul class="user-navigation-list">
-				<li class="user-navigation-item">
-					<a class="visually-hidden">Поиск</a>
-					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-						<label for="search-text">Поиск по сайту</label>
-						<input type="search" name="search-text" placeholder="Что ищем?" id="search-text">
-					</form>
-				</li>
-				<li class="user-navigation-item">
-					<a>Вход</a>
-					<form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-						<label class="visually-hidden" for="user-email">Электронная почта</label>
-						<input type="email" name="user-email" placeholder="Электронная почта" id="user-email">
-						<label class="visually-hidden" for="user-password">Пароль</label>
-						<input type="password" name="user-password" placeholder="Пароль" id="user-password">
-						<div class="user-form-inner">
-							<button class="button" type="submit">Войти</button>
-							<div class="user-help-wrapper">
-								<a href="#">Забыли пароль?</a>
-								<a href="#">Новая регистрация</a>
+				<div class="logo-wrapper">
+					<a href="#"><img src="img/logo.svg" alt="Логотип Gllacy"></a>
+				</div>
+				<ul class="site-navigation-list">
+					<li class="site-navigation-item catalog"><a href="#">Каталог</a>
+						<ul class="site-dropdown-list">
+							<li class="site-dropdown-item new"><b>Новинки</b></li>
+							<li class="site-dropdown-item"><a href="#">Сливочное</a></li>
+							<li class="site-dropdown-item"><a href="#">Щербет</a></li>
+							<li class="site-dropdown-item"><a href="#">Фруктовый лед</a></li>
+							<li class="site-dropdown-item"><a href="#">Мелорин</a></li>
+						</ul>
+					</li>
+					<li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+					<li class="site-navigation-item"><a href="#">О Компании</a></li>
+				</ul>
+				<ul class="user-navigation-list">
+					<li class="user-navigation-item search">
+						<button class="search-button"><span class="visually-hidden">Поиск</span></button>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+							<label class="visually-hidden" for="search-text">Поиск по сайту</label>
+							<input type="search" name="search-text" placeholder="Что ищем?" id="search-text">
+						</form>
+					</li>
+					<li class="user-navigation-item login">
+						<button class="login-button" type="button">Вход</button>
+						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+							<label class="visually-hidden" for="user-email">Электронная почта</label>
+							<input type="email" name="user-email" placeholder="Электронная почта" id="user-email">
+							<label class="visually-hidden" for="user-password">Пароль</label>
+							<input type="password" name="user-password" placeholder="Пароль" id="user-password">
+							<div class="login-form-inner">
+								<button class="button" type="submit">Войти</button>
+								<div class="login-help-wrapper">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
 							</div>
-						</div>
-					</form>
-				</li>
-				<li class="user-navigation-item"><a href="#">Пусто</a></li>
-			</ul>
-		</nav>
-		<p class="work-time">С 10 до 20, ежедневно<br> <b>8 812 450-25-25</b></p>
+						</form>
+					</li>
+					<li class="user-navigation-item cart">
+						<button class="cart-button" type="button">Пусто</button>
+					</li>
+				</ul>
+			</nav>
+			<div class="work-info-wrapper">
+				<p class="work-time">С 10 до 20, ежедневно</p>
+				<p class="work-phone">8 812 450-25-25</p>
+			</div>
 	</header>
 	<main>
 		<h1 class="visually-hidden">Магазин мороженного "Gllacy"</h1>
